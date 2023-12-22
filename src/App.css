@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:gilroy;
+}
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+.main{
+  min-height: 100vh;
+  width: 100%;
+  background-color:rgb(165, 225, 255);
+}
+h1{
+  font-size: 48px;
+  font-weight: 700;
+  padding: 15px 0;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  color: #000;
+  text-align: center;
+}
+form{
+  /* background-color: red; */
+  text-align: center;
+  padding: 20px 0;
+}
+input{
+  padding: 12px 18px;
+  width: 40%;
+  font-size: 17px;
+  border-radius: 5px;
+  border: none;
+  margin: 12px;
+  outline: none;
+  transition: all ease 0.8s;
+  border: 1px solid rgba(0, 0, 0, 0.514);
+
+}
+input:focus{
+  border: 1px solid rgb(14, 211, 255);
+}
+input::placeholder{
+  font-weight: 600;
+  font-size: 14px;
+  color: #9c9c9c;
+}
+form button{
+  background-color: rgb(255, 67, 83);
+  border-radius: 5px;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 10px;
+  outline: none;
+  padding: 11px 20px;
+}
+
+.showtask{
+  /* background-color: red; */
+  text-align: center;
+  border-top: 2px solid #000;
+  padding: 14px;
+}
+.showtask h2{
+  opacity: 0.9;
+  font-size: 30px;
+}
+ul{
+  text-align: center;
+}
+.showtask li{
+  list-style-type: none;
+  font-size: 18px;
+  padding: 12px 25px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40vw;
+  border: 1px solid #000;
+
+  margin-left: 30%;
+}
+.showtask li button{
+  border: none;
+  color: #fff;
+  background-color: rgb(255, 67, 83);
+  padding: 7px 14px;
+  font-size: 15px;
+  cursor: pointer;
+  font-weight: 600px;
+  outline: none;
+  border-radius: 5px;
+}
+
+h3{
+  text-align: left;
+  font-size: 25px;
+}
+p{
+  text-align: left;
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+
+@media (max-width:600px) {
+  h1{
+    font-size: 30px;
+  }
+  input{
+    width: 70vw;
+  }
+  .showtask h2{
+    opacity: 0.9;
+    font-size:22px;
+  }
+  form button{
+    font-size: 15px;
+    padding: 9px 18px;
+  }
+  h3{
+    font-size: 18px;
+  }
+  .showtask li{
+    padding: 8px 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 94%;
+    margin-bottom: 10px;
+    margin-left: 2.5vw;
+  }
+  .showtask li button{
+
+    padding: 6px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600px;
+    border-radius: 5px;
+  }
+  p{
+    font-size: 12px;
+  }
+}
